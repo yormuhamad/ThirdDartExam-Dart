@@ -1,3 +1,11 @@
+void main() {
+  Car myCar = Car("");
+  myCar.accelerate();
+  myCar.brake();
+
+  print('${myCar.fuelType} ');
+}
+
 
 abstract class Drivable {
   void accelerate();
@@ -23,10 +31,4 @@ class Car implements Drivable {
   }
 }
 
-void main() {
-  Car myCar = Car("");
-  myCar.accelerate();
-  myCar.brake();
 
-  print('${myCar.fuelType} ');
-}
