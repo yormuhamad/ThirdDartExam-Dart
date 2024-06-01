@@ -1,3 +1,12 @@
+
+void main() {
+  Circle circle = Circle(2);
+  Square square = Square(3);
+
+  print('Area of Circle: ${circle.area()}');
+  print('Area of Square: ${square.area().toInt()}');
+}
+
 abstract class Shape {
   double area();
 }
@@ -24,10 +33,4 @@ class Square extends Shape {
   }
 }
 
-void main() {
-  Circle circle = Circle(2);
-  Square square = Square(3);
 
-  print('Area of Circle: ${circle.area()}');
-  print('Area of Square: ${square.area().toInt()}');
-}
